@@ -31,7 +31,16 @@ const CONFIG = {
     external: {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
-      projects: [],
+      projects: [
+        {
+          title: 'Some arm wrestling game',
+          description:
+            'Small weekend project I created in 2021. Overall performed well with 250k+ visits acquired',
+          imageUrl:
+            'https://tr.rbxcdn.com/180DAY-448df3218e9f0e08bceb0a0e59cdcc39/352/352/Image/Png/noFilter',
+          link: 'https://www.roblox.com/games/4801448746/UPDATE-Some-arm-wrestling-game',
+        }
+      ],
     },
   },
   seo: {
@@ -83,6 +92,13 @@ const CONFIG = {
       from: 'April 2025',
       to: 'Present',
       companyLink: '',
+    },
+    {
+      company: 'some arm wrestling game',
+      position: 'Lead Developer',
+      from: 'July 2021',
+      to: 'July 2021',
+      companyLink: 'https://www.roblox.com/games/4801448746/UPDATE-Some-arm-wrestling-game',
     },
     {
       company: 'Grilla',
