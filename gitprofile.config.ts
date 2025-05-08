@@ -20,7 +20,7 @@ const CONFIG = {
         limit: 8, // How many projects to display.
         exclude: {
           forks: true, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          projects: ['HavocOmega/HavocOmega', 'HavocOmega/self-balancing-robot'], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
@@ -83,7 +83,21 @@ const CONFIG = {
       from: 'April 2025',
       to: 'Present',
       companyLink: '',
-    }
+    },
+    {
+      company: 'Grilla',
+      position: 'Gameplay Programmer',
+      from: 'February 2020',
+      to: 'February 2020',
+      companyLink: 'https://www.roblox.com/games/4650856084/GRILLA-BETA',
+    },
+    {
+      company: 'Iconic Gaming LLC',
+      position: 'Manager',
+      from: '2019',
+      to: '2021',
+      companyLink: 'https://www.roblox.com/communities/6941808/Iconic-Gaming-Studios#!/about',
+    },
   ],
   certifications: [],
   educations: [],
