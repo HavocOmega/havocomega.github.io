@@ -31,20 +31,11 @@ const CONFIG = {
     external: {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
-      projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-      ],
+      projects: [],
     },
   },
   seo: {
-    title: 'HavocOmega\'s Portfolio',
+    title: 'HavocOmega Portfolio',
     description: '',
     imageURL: '',
   },
@@ -72,19 +63,19 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Lua',
-    'Luau',
+    'LuaU',
     'C#',
     'Python',
-    'Roblox',
-    'Blender',
-    'Godot',
+    'Java',
+    'Roblox Studio',
     'Unity',
-    'Git'
-  ],
+    'Godot',
+    'Blender'
+    ],
   experiences: [
     {
       company: 'UNDISCLOSED PROJECT',
@@ -92,13 +83,27 @@ const CONFIG = {
       from: 'April 2025',
       to: 'Present',
       companyLink: '',
-    },
+    }
   ],
   certifications: [],
   educations: [],
-  publications: [],
+  publications: [
+    {
+      title: 'Radial Building Tool | Shortcuts for building',
+      conferenceName: '',
+      journalName: '',
+      authors: 'HavocOmega',
+      link: 'https://devforum.roblox.com/t/radial-building-tool-shortcuts-for-building/907688',
+      description:
+        'A powerful and customizable Radial Menu Plugin for Roblox Studio, inspired by Blender\'s efficient radial menu system. This plugin aims to streamline the developer workflow by providing quick access to essential tools and actions through an intuitive radial interface.',
+    }
+  ],
   // Display articles from your medium or dev account. (Optional)
-  blog: {},
+  blog: {
+    source: 'dev', // medium | dev
+    username: '', // to hide blog section, keep it empty
+    limit: 2, // How many articles to display. Max is 10.
+  },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
@@ -112,7 +117,7 @@ const CONFIG = {
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: true,
+    disableSwitch: false,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
@@ -170,14 +175,7 @@ const CONFIG = {
     },
   },
 
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
-
-  enablePWA: false,
+  enablePWA: true,
 };
 
 export default CONFIG;
