@@ -96,17 +96,7 @@ const CONFIG = {
   ],
   certifications: [],
   educations: [],
-  publications: [
-    {
-      title: 'Radial Building Tool | Shortcuts for building',
-      conferenceName: '',
-      journalName: '',
-      authors: '',
-      link: 'https://devforum.roblox.com/t/radial-building-tool-shortcuts-for-building/907688/1',
-      description:
-        'A powerful and customizable Radial Menu Plugin for Roblox Studio, inspired by Blender\'s efficient radial menu system. This plugin aims to streamline the developer workflow by providing quick access to essential tools and actions through an intuitive radial interface.',
-    }
-  ],
+  publications: [],
   // Display articles from your medium or dev account. (Optional)
   blog: {},
   googleAnalytics: {
@@ -126,7 +116,7 @@ const CONFIG = {
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
-    respectPrefersColorScheme: false,
+    respectPrefersColorScheme: true,
 
     // Display the ring in Profile picture
     displayAvatarRing: true,
